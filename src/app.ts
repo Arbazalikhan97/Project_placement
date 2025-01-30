@@ -4,6 +4,9 @@ import dotenv from 'dotenv';
 import connectDB from './config/db';
 import placementRoutes from './routes/placementRoutes';
 import authRoutes from './routes/authRoutes';
+import { globalErrorHandler } from './middleware/errorHandler';
+
+
 
 dotenv.config();
 
@@ -20,6 +23,8 @@ connectDB();
 // Routes
 app.use('/api/placements', placementRoutes); // Ensure this is correct
 app.use('/api/auth', authRoutes);
+app.use(globalErrorHandler);
+
 
 app.get('/', (req, res) => {
   res.send('Placement Management System API');
