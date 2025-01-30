@@ -1,14 +1,22 @@
-# Placement Management System
+ Placement Management System - Backend
 
-A web application to manage student placements for the School of Informatics.
+A web application backend to manage student placements for universities, built with Node.js, Express, and MongoDB.
 
-## Features
-- Submit placement requests
-- Manage students on placements
-- Schedule placement visits
-- Map view for placement locations
+Key Features:-
 
-## Setup
-1. Clone the repository.
-2. Run `bun install` to install dependencies.
-3. Start the server with `bun run src/server.ts`.
+Student placement, 
+authorization requests,
+Placement management (add/update placements),
+JWT Authentication,
+Placement visit scheduling,
+Error handling and validation,
+Comprehensive testing,
+
+Technology Stack:-
+
+Runtime: Bun,
+Framework: Express.js,
+Database: MongoDB (with Mongoose ODM),
+Authentication: JSON Web Tokens (JWT),
+Testing: Jest + Supertest,
+Environment: Dotenv,
